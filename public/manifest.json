@@ -1,15 +1,15 @@
 {
-  "name": "Byoe - Travel & Food Delivery Platform",
-  "short_name": "Byoe",
-  "description": "Your complete travel companion - flights, hotels, cabs, shuttle, and food delivery services",
+  "name": "Patidar Homeopathic Clinic",
+  "short_name": "Patidar Homeo",
+  "description": "Natural homeopathy care by Dr. Lokesh Patidar in Mandsaur, offering effective treatment for chronic illness, skin problems, thyroid, and more.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#f97316",
+  "theme_color": "#16a34a",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
-  "categories": ["travel", "food", "transportation"],
+  "categories": ["health", "medical", "wellness"],
   "icons": [
     {
       "src": "/favicon-16x16.png",
@@ -55,10 +55,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Book Flights",
-      "short_name": "Flights",
-      "description": "Search and book flights",
-      "url": "/flights",
+      "name": "Book Appointment",
+      "short_name": "Appointment",
+      "description": "Schedule a consultation with Dr. Lokesh Patidar",
+      "url": "/#appointment",
       "icons": [
         {
           "src": "/favicon-32x32.png",
@@ -67,22 +67,10 @@
       ]
     },
     {
-      "name": "Find Hotels",
-      "short_name": "Hotels",
-      "description": "Search and book hotels",
-      "url": "/hotels",
-      "icons": [
-        {
-          "src": "/favicon-32x32.png",
-          "sizes": "32x32"
-        }
-      ]
-    },
-    {
-      "name": "Order Food",
-      "short_name": "Eats",
-      "description": "Order food delivery",
-      "url": "/eats",
+      "name": "Contact Clinic",
+      "short_name": "Contact",
+      "description": "Get in touch with the homeopathy clinic",
+      "url": "/#about",
       "icons": [
         {
           "src": "/favicon-32x32.png",

@@ -1,21 +1,15 @@
 {
-  "name": "travel-admin-dashboard",
+  "name": "patidar-homeopathy-clinic",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
+  "description": "A responsive homeopathy clinic website for Dr. Lokesh Patidar, built with React, Vite, and Tailwind CSS.",
+  "author": "Patidar Homeopathic Clinic",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:local": "cross-env VITE_API_URL=http://localhost:4013 VITE_USER_API_URL=http://localhost:4013/api VITE_ADMIN_API_URL=http://localhost:4013/admin VITE_SUPER_ADMIN_API_URL=http://localhost:4013/super-admin vite",
-    "dev:frontend": "cross-env VITE_DISABLE_BACKEND=true VITE_ENABLE_DEMO_MODE=true vite",
-    "build:sitemap": "node scripts/generate-sitemap.js",
-    "sitemap:update": "node scripts/auto-sitemap-updater.js",
-    "sitemap:health": "node scripts/auto-sitemap-updater.js --health-check",
-    "build": "node scripts/generate-sitemap.js && vite build",
-    "build:frontend": "cross-env VITE_DISABLE_BACKEND=true VITE_ENABLE_DEMO_MODE=true vite build",
-    "lint": "eslint .",
+    "build": "vite build",
     "preview": "vite preview",
-    "start:server": "node mock-server.js",
-    "dev:full": "concurrently \"npm run start:server\" \"npm run dev:local\""
+    "lint": "eslint ."
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
