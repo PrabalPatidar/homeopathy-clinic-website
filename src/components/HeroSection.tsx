@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { Calendar, ArrowRight } from 'lucide-react';
+import { Calendar, ArrowRight, ShieldCheck, Sparkles, HeartHandshake } from 'lucide-react';
 
 const featureImage = 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAFfmsVzC8-pK0YFT4pLSRoTcvPmAuIM9BKn4OSRJGkQiWmt4vCn2f-k3jHshF7OVwZLYJSBg43_eJ452QYbX28pE0PIJ7apsFuQbftcbPC3QN5kiW7IFK0Mj1g9_cIcMlOmxkTj=s1360-w1360-h1020-rw';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-beige">
+    <section id="home" className="relative pt-28 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-beige">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[800px] h-[800px] bg-primary-100 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[600px] h-[600px] bg-accent-light rounded-full blur-3xl opacity-20 pointer-events-none"></div>
@@ -30,7 +30,31 @@ const HeroSection = () => {
             <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl">
               Experience holistic treatment without side effects. We treat the root cause, not just the symptoms, bringing balance back to your body naturally.
             </p>
-            
+
+            <div className="grid gap-3 sm:grid-cols-3 mb-8">
+              <div className="rounded-3xl bg-white/90 border border-slate-200 p-4 shadow-sm">
+                <div className="flex items-center gap-3 text-primary-600 mb-3">
+                  <Sparkles size={20} />
+                  <span className="font-semibold">100% Natural Care</span>
+                </div>
+                <p className="text-sm text-slate-600">Safe remedies for every age.</p>
+              </div>
+              <div className="rounded-3xl bg-white/90 border border-slate-200 p-4 shadow-sm">
+                <div className="flex items-center gap-3 text-primary-600 mb-3">
+                  <ShieldCheck size={20} />
+                  <span className="font-semibold">Trusted Expertise</span>
+                </div>
+                <p className="text-sm text-slate-600">Professional care by experienced specialists.</p>
+              </div>
+              <div className="rounded-3xl bg-white/90 border border-slate-200 p-4 shadow-sm">
+                <div className="flex items-center gap-3 text-primary-600 mb-3">
+                  <HeartHandshake size={20} />
+                  <span className="font-semibold">Personalized Treatment</span>
+                </div>
+                <p className="text-sm text-slate-600">Medication tailored to your body’s needs.</p>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#appointment" 
@@ -48,17 +72,17 @@ const HeroSection = () => {
               </a>
             </div>
 
-            <div className="mt-12 flex items-center gap-6">
+            <div className="mt-12 flex flex-col sm:flex-row items-center gap-6">
               <div className="flex -space-x-4">
                 {[1,2,3,4].map((i) => (
-                  <img key={i} className="w-12 h-12 rounded-full border-2 border-white object-cover" src={`https://i.pravatar.cc/100?img=${i+10}`} alt="Patient" />
+                  <img key={i} className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm" src={`https://i.pravatar.cc/100?img=${i+10}`} alt="Patient" />
                 ))}
               </div>
               <div className="text-sm">
-                <div className="font-bold text-slate-800 flex items-center gap-1">
-                  <span className="text-yellow-400">★★★★★</span> 5.0
+                <div className="font-bold text-slate-800 flex items-center gap-2">
+                  <span className="text-yellow-400">★★★★★</span>
+                  5.0 rating from 1,000+ patients
                 </div>
-                <div className="text-slate-500">From 1,000+ happy patients</div>
               </div>
             </div>
           </motion.div>
@@ -77,14 +101,14 @@ const HeroSection = () => {
                 className="w-full h-full min-h-[420px] rounded-[1.5rem] object-cover"
               />
 
-              {/* Floating Badge 1 */}
+              {/* Floating Badge 1 (inside card) */}
               <motion.div 
-                className="absolute top-10 -left-6 lg:-left-12 glass-effect p-4 rounded-2xl flex items-center gap-4"
-                animate={{ y: [0, -10, 0] }}
+                className="absolute top-6 left-6 glass-effect p-3 rounded-2xl flex items-center gap-3 z-20"
+                animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                <div className="w-12 h-12 rounded-full bg-accent-light flex items-center justify-center text-accent-dark text-xl font-bold">
-                  15+
+                <div className="w-10 h-10 rounded-full bg-accent-light flex items-center justify-center text-accent-dark text-lg font-bold">
+                  5+
                 </div>
                 <div>
                   <div className="font-bold text-slate-800">Years</div>
@@ -92,14 +116,14 @@ const HeroSection = () => {
                 </div>
               </motion.div>
 
-              {/* Floating Badge 2 */}
+              {/* Floating Badge 2 (inside card) */}
               <motion.div 
-                className="absolute bottom-10 -right-6 lg:-right-8 glass-effect p-4 rounded-2xl flex items-center gap-4"
-                animate={{ y: [0, 10, 0] }}
+                className="absolute bottom-6 right-6 glass-effect p-3 rounded-2xl flex items-center gap-3 z-20"
+                animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
-                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
