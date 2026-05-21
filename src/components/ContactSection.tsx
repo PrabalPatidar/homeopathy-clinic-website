@@ -54,7 +54,7 @@ const ContactSection = () => {
                       Mandsaur, Madhya Pradesh - 458001
                     </div>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Dashpur+Kunj+Road+near+BPL+Square+Mandsaur"
+                      href="https://maps.app.goo.gl/JpFrbyzzQofzsxvD7"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex mt-3 items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white hover:bg-white/20 transition-colors"
@@ -62,7 +62,7 @@ const ContactSection = () => {
                       Open in Google Maps
                     </a>
                     <a
-                      href="https://wa.me/919826623981?text=Hello%20Dr.%20Patidar%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                      href="https://wa.me/919826623981?text=Hello%20Dr.%20Lokesh%20Patidar%2C%20I%20would%20like%20to%20book%20an%20appointment."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex mt-3 items-center rounded-full bg-emerald-500 px-4 py-2 text-sm text-white hover:bg-emerald-600 transition-colors"
