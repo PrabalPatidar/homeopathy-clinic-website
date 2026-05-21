@@ -98,17 +98,17 @@ const HeroSection = () => {
               <img 
                 src={featureImage} 
                 alt="Dr. Lokesh Patidar sitting at his clinic desk" 
-                className="w-full h-full min-h-[420px] rounded-[1.5rem] object-cover"
+                className="w-full h-[320px] sm:h-[420px] md:h-[480px] lg:h-auto rounded-[1.5rem] object-cover object-center sm:object-top"
               />
 
               {/* Floating Badge 1 (inside card) */}
               <motion.div 
-                className="absolute top-6 left-6 glass-effect p-3 rounded-2xl flex items-center gap-3 z-20"
+                className="absolute top-2 left-2 sm:top-4 sm:left-4 md:top-6 md:left-6 glass-effect p-1.5 sm:p-2 sm:ps-3 rounded-2xl flex items-center gap-2 sm:gap-3 z-20"
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                <div className="w-10 h-10 rounded-full bg-accent-light flex items-center justify-center text-accent-dark text-lg font-bold">
-                  5+
+                <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-accent-light flex items-center justify-center text-accent-dark text-xs sm:text-sm md:text-lg font-bold">
+                  15+
                 </div>
                 <div>
                   <div className="font-bold text-slate-800">Years</div>
@@ -118,12 +118,12 @@ const HeroSection = () => {
 
               {/* Floating Badge 2 (inside card) */}
               <motion.div 
-                className="absolute bottom-6 right-6 glass-effect p-3 rounded-2xl flex items-center gap-3 z-20"
+                className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:bottom-6 md:right-6 glass-effect p-1.5 sm:p-2 sm:ps-3 rounded-2xl flex items-center gap-2 sm:gap-3 z-20"
                 animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
-                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
