@@ -108,7 +108,7 @@ const HeroSection = () => {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
                 <div className="w-7 h-7 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-accent-light flex items-center justify-center text-accent-dark text-xs sm:text-sm md:text-lg font-bold">
-                  15+
+                  5+
                 </div>
                 <div>
                   <div className="font-bold text-slate-800">Years</div>
